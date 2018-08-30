@@ -1,0 +1,334 @@
+<!-- ARQUIVO HTML CIRURGIAS -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cirurgias</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style/cirurgias.css" />
+    <link rel="shortcut icon" href="favicon/favicon.png"/>
+    <style>
+        body{
+                        background: #165064 url("img/fundo2.jpg") repeat-x;
+            background-size: 100% 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- CABEÇALHO -->   
+    <header class="cabecalho"> 
+        <a href="index.html"><img class="logo" src="img/OLPlogo.png"></a>
+        <div id='search-box'>
+            <form action='/search' id='search-form' method='get' target='_top'>
+              <input id='search-text' name='q' placeholder='Faça Sua pesquisa...' type='text'/>
+              <button id='search-button' type='submit'><span>Pesquisar</span></button>
+            </form>
+          </div> 
+    </header>
+    
+<!-- MENU DE NAVEGAÇÃO -->
+        
+    <nav>
+      <ul id="menu">
+        <div class="menu">
+    
+          <li class="menu-principal">
+            <a href="index.html">Home</a>
+          </li>
+    
+          <li class="menu-principal">
+            <a href="produtos.html"> Produtos</a>
+          </li>
+    
+          <li class="menu-principal">
+            <a href="petshop.html">Pet shop</li>
+          </a>
+    
+          <li class="menu-principal">
+            <a href="hospital.html">Hospital Veterinário</li>
+          </a>
+    
+          <li class="menu-principal">
+            <a href="sobre.html"> Sobre </a>
+          </li>
+    
+        </div>
+      </ul>
+    </nav>
+
+<!-- AREA DE CONTEÚDO-->
+                <div class="container">
+                <h1 align ="center">Cirurgias </h1>
+
+<!-- IMAGEM CENTRAL-->
+		<center>
+        <img src="img/cirurgias/cirurgia.jpg"
+                 
+                 width="60%"
+                 height="400px"vvvv
+				 alt="Designed by Freepic.diller / Freepik"
+				 title="Designed by Freepic.diller / Freepik"><br></center>
+
+<!-- TEXTO E LISTA CONTEUDO -->        
+        <p>Com profissionais especializados, tanto em cirurgia como em anestesia, e um complexo cirúrgico com equipamentos modernos para:</p>
+
+<ul>
+	<li>Esterilização dos materias,</li>
+	<li>Sala de preparo e centro cirúrgico com monitoração cardíaca</li>
+	<li>Pressão arterial invasiva e não invasiva</li>
+	<li>Oximetria de pulso</li>
+	<li>Aferição da temperatura do Pet</li>
+	<li>Capnografia</li>
+	<li>Analisador de gases anestésicos</li>
+	<li>Anestesia inalatória com ventilação controlada</li>
+	<li>bombas de infusão para administração controlada de medicamentos</li>
+</ul>
+<p>Além de uma equipe cirúrgica disponível 24 horas por dia, podemos oferecer a nossos pacientes um serviço de ótima qualidade e segurança.</p>
+ <hr>   
+<!-- FORMULARIO DE CONSULTA -->
+         <h1 align ="center">Agende sua consulta! </h1>  
+        <form action="dadosconsulta.html">
+<fieldset>
+    <legend align="center"><h2>Dados do Pet</h2></legend> 
+    Nome / Apelido
+			<input
+                    type="text"
+					name="Nome"
+					placeholder="Até 20 car."
+					size="25"
+					maxlength="20"
+					required>
+			<br><br>
+    Idade (até 30 anos):
+                <input type="text"
+					name="Idade"
+					size="2"
+					maxlength="2"
+					required>
+			<br><br>
+    Foto:
+			     <input type="file" 
+                        name="foto"> 
+            <br><br>
+    Tipo:
+			<input 	type="radio" 
+						name="raça" 
+						value="Cachorro"
+						checked
+                        required>Cachorro
+            
+            <input 	type="radio" 
+						name="raça" 
+						value="Gato"
+						required>Gato
+            
+            <input 	type="radio" 
+						name="raça" 
+						value="Outros"
+						required>Outros
+    
+            <br><br>
+    Raça:
+			<input type="text"
+					name="Raça"
+					placeholder="Até 25 caracteres."
+					size="25"
+					maxlength="25"
+            <br><br><br>
+    Sexo: 
+            <input 	type="radio" 
+						name="sexo" 
+						value="masculino"
+						checked
+                        required>Masculino
+						
+            <input  type="radio" 
+						name="sexo"
+						value="Feminimo"
+                        required>Feminino
+    
+			<br>
+
+</fieldset><!--DADOS DO PET-->
+    
+    <fieldset>
+            <legend align="center"><h2>Dados do Proprietário</h2></legend>         
+        
+        Nome:
+			<input type="text"
+					name="Nome"
+					placeholder="Até 60 car."
+					size="60"
+					maxlength="60"
+					required>
+            <br><br>
+        CPF:
+			<input type="text"
+					name="Nome"
+					size="12"
+					maxlength="11"
+					required>
+			<br><br>
+        e-mail:
+			<input type="text"
+					name="Nome"
+					placeholder="Até 60 car."
+					size="60"
+					maxlength="60"
+					required>
+            <br>
+            <input 	type="checkbox" 
+					checked
+					value="S"
+					name="recEmails">Desejo receber e-mails
+            <br><br>
+        Telefone Residencial:<br>
+            
+        DDD: 
+            <input type="text"
+					name="DDD"
+					size="2"
+					maxlength="2"
+					required>
+            
+        Número:
+            <input type="text"
+					name="Numero"
+					size="9"
+					maxlength="9"
+					required>
+            <br>
+        Telefone Celular:<br>
+            
+        DDD: 
+            <input type="text"
+					name="DDD"
+					size="2"
+					maxlength="2"
+					required>
+            
+        Número:
+            <input type="text"
+					name="Numero"
+					size="9"
+					maxlength="9"
+					required>
+            <br><br>
+        
+</fieldset><!--DADOS DO PROPRIETARIO-->
+  
+    <fieldset>
+                <legend align="center"><h2>Agendamento de Consulta</h2></legend>
+  
+
+<!--DADOS PARA O USUARIO-->
+            Datas disponiveis: 
+        
+        <table  border="1" 
+				    bordercolor="black"
+                    bgcolor="white">
+			
+			<tr bgcolor="white">
+				<th rowspan="2">DATA</th>
+				<th rowspan="2">HORÁRIO</th>
+				<th rowspan="2">STATUS</th>
+            </tr> 
+             
+            <tr bgcolor="white">
+                
+            </tr>
+            
+            
+             <tr bgcolor="white">
+                <td align="center">04-06-2018</td>
+                <td align="center">10:00 hrs
+                                   10:30 hrs
+                                   14:00 hrs
+                                   17:30 hrs</td>
+                <td align="center">DISPONIVEL</td>   
+            </tr>
+            
+            <tr bgcolor="white">
+                <td align="center">05-06-2018</td>
+                <td align="center">11:00 hrs
+                                   12:30 hrs
+                                   14:30 hrs
+                                   17:30 hrs</td>
+                <td align="center">DISPONIVEL</td>   
+            </tr>
+            
+            <tr bgcolor="white">
+                <td align="center">06-06-2018</td>
+                <td align="center">00:00 hrs
+                                   00:00 hrs
+                                   00:00 hrs
+                                   00:00 hrs</td>
+                <td align="center">INDISPONIVEL</td>   
+            </tr>
+            
+            <tr bgcolor="white">
+                <td align="center">07-06-2018</td>
+                <td align="center">10:00 hrs
+                                   15:30 hrs
+                                   16:00 hrs
+                                   16:30 hrs</td>
+                <td align="center">DISPONIVEL</td>   
+            </tr>
+            
+            <tr bgcolor="white">
+                <td align="center">08-06-2018</td>
+                <td align="center">12:30 hrs
+                                   13:00 hrs
+                                   14:30 hrs
+                                   15:30 hrs</td>
+                <td align="center">DISPONIVEL</td>   
+            </tr>
+        
+        </table>
+        <br>
+        
+ <!--PARA DATA FOI DESTINADA UMA SEMANA PARA CONSULTA, RESTRINGINDO DEMAIS DATAS-->   
+            Data:
+			<input  type="date"
+					min="2018-06-04"
+					max="2018-06-08"
+					name="data"> 
+            <br><br>
+        
+<!--APENAS UMA PREVISÃO PARA POSSÍVEIS ENCAIXES-->          
+            Previsão de Hora (08:00hs ás 17:30hrs):
+			<input  type="time"
+					min="08:00" max="17:30"
+					name="hora"> 
+            <br><br>
+    
+<!--DESCRICAO E INFORMACAO-->           
+            Sintomas e descrições:<br>
+			<textarea name="Sin_sdes"
+				rows="4"
+				cols="80"></textarea>
+        
+      
+					
+			
+            <br>
+        
+              
+</fieldset><!--AGENDAMENTO DE CONSULTA-->
+    <br>    
+            <input type="submit" value="Enviar">
+              
+			
+            <input type="reset" value="Limpar Dados">             
+                    </form>                
+</div>
+
+<!-- RODAPÉ -->
+            <footer>
+                <div class="rodape">
+                  <p>&copy; <b>Over Life Pet</b> Todos os Direitos Reservados</p>
+              
+                </div>
+              </footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon/favicon.png" />
+    <meta charset="utf-8" />
+    <title>Venha trabalhar com a gente</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style/vagas.css" />
+    <style>
+        body{
+            background: #165064 url("img/fundo2.jpg") repeat-x;
+            background-size: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Cabeçalho -->    
+    <header class="cabecalho"> 
+            <a href="index.html"><img class="logo" src="img/OLPlogo.png"></a>
+			<div id='search-box'>
+				<form action='/search' id='search-form' method='get' target='_top'>
+				  <input id='search-text' name='q' placeholder='Faça Sua pesquisa...' type='text'/>
+				  <button id='search-button' type='submit'><span>Pesquisar</span></button>
+				</form>
+			  </div> 
+    </header>
+    
+        <!-- Menu -->
+        
+        <nav>
+            <ul id="menu">
+                <div class="menu">
+        
+                    <li class="menu-principal">
+                        <a href="index.html">Home</a>
+                    </li>
+        
+                    <li class="menu-principal">
+                        <a href="produtos.html"> Produtos</a>
+                    </li>
+        
+                    <li class="menu-principal">
+                        <a href="petshop.html">Pet shop</li>
+                    </a>
+        
+                    <li class="menu-principal">
+                        <a href="hospital.html">Hospital Veterinário</li>
+                    </a>
+        
+                    <li class="menu-principal">
+                        <a href="sobre.html"> Sobre </a>
+                    </li>
+        
+                </div>
+            </ul>
+        </nav>
+    
+    <!--   CONTEÚDO DA SUA PÁGINA VAI ABAIXO   -->
+    <article id="conteudo-da-pagina">
+			<form action="resposta.html"                    
+		          method="post"                    
+			      enctype="multipart/form-data">
+			<h2>Trabalhe Conosco</h2>
+			Disposta a investir em novos talentos para compor seu quadro de colaboradores,
+			a Over Life Pet disponibiliza este canal aos profissionais interessados
+			em encaminhar seus currículos para nosso banco de dados. Caso seu perfil 
+			seja adequado a uma de nossas necessidades, entraremos em contato.<br><br>
+			Observação: A Over Life Pet está situada em São Paulo/SP e no momento estamos cadastrando
+			somente currículos das cidades disponíveis no formulário.<br>
+			(<font color="red">*</font>) Campos de preenchimento obrigatório.<br><br>
+			<fieldset>
+				<legend>Preencha o formulário</legend>
+				<br>
+				<font color="red">*</font> Nome:
+				<input type="text"
+					   name="nome"
+				       size="50"
+					   placeholder="Nome completo"
+				       required>
+				<br><br>
+				<font color="red">*</font> E-mail:
+				<input type="email"
+			           name="email"
+				       size="50"
+				       placeholder="exemplo@exemplo.com.br"
+				       maxlength="80"
+				       required>
+				<input type="checkbox"
+				       checked
+				       value="S"
+			           name="recEmails">Desejo receber notificações via e-mail.
+				<br><br><hr><br>
+				<font color="red">*</font> Telefone (Residencial):
+				<input type="text"
+			           name="ddd"
+				       placeholder="DDD"
+				       size="1"
+				       maxlength="2"
+				       required>
+				<input type="text"
+				       name="numCel"
+				       placeholder="Residencial"
+				       size="8"
+				       maxlength="8"
+				       required>
+				Telefone 1 (Recados):
+				<input type="text"
+			           name="ddd"
+				       placeholder="DDD"
+				       size="1"
+				       maxlength="2">
+				<input type="text"
+				       name="numRec1"
+				       placeholder="Recados"
+				       size="9"
+				       maxlength="9">
+				<br><br>
+				<font color="red">*</font> Telefone (Celular):
+				<input type="text"
+			           name="ddd"
+				       placeholder="DDD"
+				       size="1"
+				       maxlength="2"
+				       required>
+				<input type="text"
+				       name="numCel"
+				       placeholder="Celular"
+				       size="9"
+				       maxlength="9"
+				       required>
+				Telefone 2 (Recados):
+				<input type="text"
+			           name="ddd"
+				       placeholder="DDD"
+				       size="1"
+				       maxlength="2">
+				<input type="text"
+				       name="numRec2"
+				       placeholder="Recados"
+				       size="9"
+				       maxlength="9"></legend>
+				<br><br><hr><br>
+				<font color="red">*</font> Àrea de atuação:
+				<input type="text"
+			           name="area"
+				       maxlength="30"
+				       size="30"
+				       list="listaArea"
+					   placeholder="Selecione"
+				       required>
+				<datalist id="listaArea">
+					<option value="Administrativa">
+					<option value="Beleza e Bem Estar">
+					<option value="Esteticista">
+					<option value="Gerência">
+					<option value="Limpeza">
+					<option value="Logística">
+					<option value="Serviços Sociais">
+					<option value="Varejo">
+					<option value="Vendas">
+					<option value="Veterinária">
+					<option value="Outros">
+				</datalist>
+				<font color="red">*</font> Cidade:
+				<input type="text"
+			           name="cidade"
+				       maxlength="21"
+				       size="21"
+				       list="listaCid"
+					   placeholder="Selecione"
+				       required>
+				<datalist id="listaCid">
+					<option value="Diadema">
+					<option value="Guarulhos">
+					<option value="Mauá">
+					<option value="Osasco">
+					<option value="Ribeirão Pires">
+					<option value="Rio Grande da Serra">
+					<option value="Santo André">
+					<option value="São Bernardo do Campo">
+					<option value="São Caetano do Sul">
+					<option value="São Paulo (Capital)">
+				</datalist>
+				<br><br><hr><br>
+				<font color="red">*</font> Sexo
+				<input type="radio" 
+				       name="sexo"
+					   value="F">Feminino
+				<input type="radio" 
+				       name="sexo"
+					   value="M">Masculino
+				<br><br><hr><br>
+				<font color="red">*</font> Currículo:
+				<input type="file"
+			           name="curriculo">
+				<br><br>
+				Mensagem:<br>
+				<textarea name="mensagem"
+			              placeholder="Observações e/ou resumo das qualificações (currículo resumido)"
+					      rows="10"
+					      cols="80"></textarea>
+				<br><br><hr><br>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpar Dados">
+				<br><br>
+			</fieldset>
+		</form>
+    </article>
+    <!-- Rodapé -->
+<footer>
+    <div class="rodape">
+        <p>&copy; <b>Over Life Pet</b> Todos os Direitos Reservados</p>
+
+    </div>
+</footer>
+
+</body>
+</html>
